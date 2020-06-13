@@ -3,21 +3,24 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 
-const IndexPage = () => {
+class Press extends React.Component {
+  render() {
     const siteTitle = "Miranda Schreiber Personal Website"
 
     return (
       <Layout>
         <SEO
-          title="Home"
+          title="press"
           keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`]}
         />
         <h1>
-          Miranda Schreiber
+          Press
         </h1>
-        <p>Subtitle about Miranda</p>
+        <p>Paragraph Content</p>
+        <p>List of Press Releases</p>
       </Layout>
     )
+  }
 }
 
-export default IndexPage
+export default Press

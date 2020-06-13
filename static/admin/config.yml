@@ -1,11 +1,47 @@
 backend:
   name: github
-  repo: thomaswang/gatsby-personal-starter-blog
+  repo: lizfaria/miranda_schreiber
 
 media_folder: content/assets
 public_folder: ../assets
 
 collections:
+  - name: home
+    label: home
+    folder: content/home
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
+  - name: bio
+    label: bio
+    folder: content/bio
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
+  - name: press
+    label: press
+    folder: content/press
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
+  - name: writing
+    label: writing
+    folder: content/writing
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
   - name: blog
     label: Blog
     folder: content/blog

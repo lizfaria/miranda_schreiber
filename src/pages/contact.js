@@ -3,21 +3,24 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 
-const IndexPage = () => {
+class Contact extends React.Component {
+  render() {
     const siteTitle = "Miranda Schreiber Personal Website"
 
     return (
       <Layout>
         <SEO
-          title="Home"
+          title="contact"
           keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`]}
         />
         <h1>
-          Miranda Schreiber
+          Contaact
         </h1>
-        <p>Subtitle about Miranda</p>
+        <p>Paragraph Content</p>
+        <p>email and social media links</p>
       </Layout>
     )
+  }
 }
 
-export default IndexPage
+export default Contact
