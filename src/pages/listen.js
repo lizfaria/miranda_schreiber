@@ -2,23 +2,19 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-
-const Contact = () => {
-  const siteTitle = "Miranda Schreiber Personal Website"
-
+const Listen = () => {
   return (
     <Layout>
       <SEO
-        title="contact"
+        title="Listen"
         keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`]}
       />
       <h1>
-        Contact
-        </h1>
+        Listen
+      </h1>
       <p>Paragraph Content</p>
-      <p>email and social media links</p>
     </Layout>
   )
 }
 
-export default Contact
+export default Listen

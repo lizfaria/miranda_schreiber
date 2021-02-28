@@ -6,49 +6,83 @@ media_folder: content/assets
 public_folder: ../assets
 
 collections:
-  - name: home
-    label: home
-    folder: content/home
-    create: true
-    fields:
+  - name: pages
+    label: Pages
+    files: 
+    - name: home
+      label: Home
+      file: site/content/home.yml
+      fields:
+        - { name: path, label: Path }
+        - { name: title, label: Title, widget: string }
+        - { name: description, label: Description, widget: string, required: false }
+        - { name: image, label: Image,  widget: image }
+    - name: press
+      label: Selected Press
+      file: site/content/press.yml
+      create: true
+      fields:
+        - { name: path, label: Path }
+        - { name: title, label: Title, widget: string }
+        - { name: description, label: Description, required: false}
+        - name: press
+          label: press 
+          widget: list
+          fields: 
+            - { name: publisher, label: publisher name, widget: string }
+            - { name: title, label: Title, widget: string }
+            - { name: link, label: Link, widget: string }
+            - { name: year, label: Year, widget: string }
+    - name: listen
+      label: Listen
+      file: site/content/listen.yml
+      fields:
       - { name: path, label: Path }
-      - { name: title, label: Title }
-      - { name: description, label: Description }
-      - { name: body, label: Body, widget: markdown }
-  - name: bio
-    label: bio
-    folder: content/bio
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: title, label: Title }
-      - { name: description, label: Description }
-      - { name: body, label: Body, widget: markdown }
-  - name: press
-    label: press
-    folder: content/press
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: title, label: Title }
-      - { name: description, label: Description }
-      - { name: body, label: Body, widget: markdown }
-  - name: writing
-    label: writing
-    folder: content/writing
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: title, label: Title }
-      - { name: description, label: Description }
-      - { name: body, label: Body, widget: markdown }
-  - name: blog
-    label: Blog
-    folder: content/blog
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: description, label: Description }
-      - { name: body, label: Body, widget: markdown }
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Description, required: false}
+      - name: listenLink
+        label: Listen Items
+        widget: list
+        fields: 
+        - { name: publication, label: Name of Publication, widget: string }
+        - { name: outlet, label: Media Outlet/Publisher, widget: string, required: false}
+        - { name: title, label: Title, widget: string }
+        - { name: link, label: Link, widget: string, required: false }
+        - { name: embed, label: embed, widget: code, required: false }
+        - { name: year, label: Year, widget: string }
+    - name: publications
+      label: Selected Publications 
+      file: site/content/publications.yml
+      fields:
+        - { name: path, label: Path }
+        - { name: title, label: Title }
+        - { name: description, label: Description, required: false }
+        - name: publications
+          label: Publications
+          widget: list
+          fields: 
+          - { name: title, label: Title of Work, widget: string }
+          - { name: year, label: Year, widget: string }
+          - { name: outlet, label: Media Outlet, widget: string }
+          - { name: link, label: Link, widget: string }
+          - name: awards
+            label: Awards
+            required: false
+            fields: 
+              - { name: title, label: title of award, widget: string }
+              - { name: image, label: image, widget: image, required: false }
+    - name: contact
+      label: Contact
+      file: site/content/contact.yml
+      fields:
+        - { name: path, label: Path }
+        - { name: title, label: title, widget: string }
+        - { name: description, label: Description, required: false}
+        - name: contactLinks
+          label: Contact Items
+          widget: list
+          fields: 
+            - { name: title, label: Method, widget: string }
+            - { name: username, label: Username, widget: string }
+            - { name: link, label: Link, widget: string, required: false }
+

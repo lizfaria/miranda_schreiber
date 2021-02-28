@@ -1,16 +1,15 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Gatsby Starter Personal Blog`,
-    author: `Gatsby`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Miranda Schreiber`,
+    author: `Liz Faria`,
+    description: `A portfolio site for Miranda Schreiber`,
+    siteUrl: `https://mirandaschreiber.ca/`,
     social: {
-      twitter: `gatsbyjs`,
+      twitter: `miranda_joli`,
     },
   },
   plugins: [
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -87,5 +86,11 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        enableIdentityWidget: true,
+      }
+    }
   ],
 }

@@ -9,15 +9,15 @@ const IndexPage = () => {
     return (
       <Layout>
         <SEO
-          title="Home"
-          keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`]}
+          title="Miranda Schreiber"
+          keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`, `health`, `equity`]}
         />
         <h1>
           Miranda Schreiber
         </h1>
-        <p>Subtitle about Miranda</p>
+        <p>Miranda Schreiber is a Toronto-based writer, researcher, and advocate for 2SLGBTQ+ health equity.</p>
+        <img src="" alt="" />
       </Layout>
     )
 }
-
 export default IndexPage

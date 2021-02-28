@@ -3,22 +3,22 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 
-const Contact = () => {
+const Publications = () => {
   const siteTitle = "Miranda Schreiber Personal Website"
 
   return (
     <Layout>
       <SEO
-        title="contact"
+        title="writing"
         keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`]}
       />
       <h1>
-        Contact
+        selected publications
         </h1>
       <p>Paragraph Content</p>
-      <p>email and social media links</p>
+      <p>Links to written articles / essays / blog posts</p>
     </Layout>
   )
 }
 
-export default Contact
+export default Publications

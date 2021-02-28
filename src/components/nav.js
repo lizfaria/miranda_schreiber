@@ -12,11 +12,11 @@ const Nav = () => {
         paddingBottom: `2rem`,
       }}
     >
-      <Link to={`/`}>home</Link>
-      <Link to={`/bio`}>bio</Link>
-      <Link to={`/press`}>press</Link>
-      <Link to={`/writing`}>writing</Link>
-      <Link to={`/contact`}>contact</Link>
+      <Link to={`/`}>Miranda Schreiber</Link>
+      <Link to={`/press`}>Selected Press</Link>
+      <Link to={`/listen`}>Listen</Link>
+      <Link to={`/publications`}>Selected Publications</Link>
+      <Link to={`/contact`}>Contact</Link>
     </nav>
   )
 }
