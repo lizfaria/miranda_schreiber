@@ -1,6 +1,7 @@
 ---
 path: /
 title: Miranda Schreiber
-description: lorem
-image: /assets/137240484_131048092094122_3325447398786508161_n.jpg
+description: Miranda Schreiber is a Toronto-based writer, researcher, and
+  advocate for 2SLGBTQ+ health equity.
+image: /assets/miranda-schreiber.jpg
 ---
