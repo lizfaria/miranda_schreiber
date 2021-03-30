@@ -10,25 +10,26 @@ const Layout = ({ children }) => {
     <Wrapper>
       <div
         style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
           maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          maxWidth: 1200,
+          padding: 40,
+          display: 'flex',
+          justifyContent: 'flex-start',
+          alignItems: 'flex-start',
         }}
       >
         <Nav />
-        <main>{children}</main>
+        <Main>{children}</Main>
       </div>
-      <Footer>
-        © {new Date().getFullYear()}
-        {` `}
-        <a hidden href="https://www.lizfaria.ca">
-          Liz Faria
-        </a>
-      </Footer>
     </Wrapper>
   )
 }
+
+const Main = styled.main`
+  width: calc(100%);
+  padding: 0 40px;
+  margin-left: 260px;
+`
 
 const Wrapper = styled.div`
   min-height: 100vh;

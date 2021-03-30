@@ -2,8 +2,8 @@ backend:
   name: github
   repo: lizfaria/miranda_schreiber
 
-media_folder: content/assets
-public_folder: ../assets
+media_folder: static/assets
+public_folder: /assets
 
 collections:
   - name: pages
@@ -11,7 +11,7 @@ collections:
     files: 
     - name: home
       label: Home
-      file: site/content/home.yml
+      file: src/markdown-pages/home.md
       fields:
         - { name: path, label: Path }
         - { name: title, label: Title, widget: string }
@@ -19,8 +19,7 @@ collections:
         - { name: image, label: Image,  widget: image }
     - name: press
       label: Selected Press
-      file: site/content/press.yml
-      create: true
+      file: src/markdown-pages/press.md
       fields:
         - { name: path, label: Path }
         - { name: title, label: Title, widget: string }
@@ -35,7 +34,7 @@ collections:
             - { name: year, label: Year, widget: string }
     - name: listen
       label: Listen
-      file: site/content/listen.yml
+      file: src/markdown-pages/listen.md
       fields:
       - { name: path, label: Path }
       - { name: title, label: Title, widget: string }
@@ -52,7 +51,7 @@ collections:
         - { name: year, label: Year, widget: string }
     - name: publications
       label: Selected Publications 
-      file: site/content/publications.yml
+      file: src/markdown-pages/publications.md
       fields:
         - { name: path, label: Path }
         - { name: title, label: Title }
@@ -73,7 +72,7 @@ collections:
               - { name: image, label: image, widget: image, required: false }
     - name: contact
       label: Contact
-      file: site/content/contact.yml
+      file: src/markdown-pages/contact.md
       fields:
         - { name: path, label: Path }
         - { name: title, label: title, widget: string }

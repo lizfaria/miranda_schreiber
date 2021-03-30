@@ -1,24 +1,56 @@
+import { graphql } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+const Publications = ({data}) => {
+    const { allMarkdownRemark } = data 
+    const { frontmatter } = allMarkdownRemark.edges[0].node;
+    const {description, title, publications} = frontmatter;
 
-const Publications = () => {
-  const siteTitle = "Miranda Schreiber Personal Website"
-
-  return (
-    <Layout>
-      <SEO
-        title="writing"
-        keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`]}
-      />
-      <h1>
-        selected publications
+    return (
+      <Layout>
+        <SEO
+          title="Miranda Schreiber Publications"
+          keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`, `health`, `equity`]}
+        />
+        <h1>
+          {title}
         </h1>
-      <p>Paragraph Content</p>
-      <p>Links to written articles / essays / blog posts</p>
-    </Layout>
-  )
+        <p>{description}</p>
+        <ul>
+          {publications.map(({link, outlet, year, title}) =>
+            <li>
+              <a href={link} target="_blank" rel="noreferrer">{title}</a>
+              <p>{outlet}</p>
+              <p>{year}</p>
+            
+            </li>
+          )}
+        </ul>
+      </Layout>
+    )
 }
-
 export default Publications
+
+export const pageQuery = graphql`
+  query PublicationsPageQuery {
+    allMarkdownRemark(filter: {frontmatter: {path: {eq: "/publications"}}}) {
+      edges {
+        node {
+          frontmatter {
+            publications {
+              link
+              outlet
+              title
+              year
+            }
+            title
+            path
+            description
+          }
+        }
+      }
+    }
+  }
+`;
