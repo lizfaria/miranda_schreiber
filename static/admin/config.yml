@@ -11,7 +11,7 @@ collections:
     files: 
     - name: home
       label: Home
-      file: content/home.md
+      file: site/content/home.yml
       fields:
         - { name: path, label: Path }
         - { name: title, label: Title, widget: string }
@@ -19,7 +19,7 @@ collections:
         - { name: image, label: Image,  widget: image }
     - name: press
       label: Selected Press
-      file: content/press.md
+      file: site/content/press.yml
       create: true
       fields:
         - { name: path, label: Path }
@@ -35,7 +35,7 @@ collections:
             - { name: year, label: Year, widget: string }
     - name: listen
       label: Listen
-      file: content/listen.md
+      file: site/content/listen.yml
       fields:
       - { name: path, label: Path }
       - { name: title, label: Title, widget: string }
@@ -52,7 +52,7 @@ collections:
         - { name: year, label: Year, widget: string }
     - name: publications
       label: Selected Publications 
-      file: content/publications.md
+      file: site/content/publications.yml
       fields:
         - { name: path, label: Path }
         - { name: title, label: Title }
@@ -73,7 +73,7 @@ collections:
               - { name: image, label: image, widget: image, required: false }
     - name: contact
       label: Contact
-      file: content/contact.md
+      file: site/content/contact.yml
       fields:
         - { name: path, label: Path }
         - { name: title, label: title, widget: string }
