@@ -5,7 +5,7 @@ import styled from "styled-components"
 const Nav = () => {
   const Nav = styled.nav`
     position: fixed;
-    top: 3rem;
+    top: 2rem;
     left: 3rem;
     display: flex;
     flex-direction: column;
@@ -13,9 +13,9 @@ const Nav = () => {
     align-items: flex-start;
     padding-bottom: 2rem;
     width: 260px;
-    & > a {
-      line-height: 2em;
+    a {
       text-decoration: none;
+      padding-bottom: .5rem;
       box-shadow: none;
       color: #1f1f1f;
       &:hover {
@@ -23,14 +23,16 @@ const Nav = () => {
       }
     }
   `
-  const Title = styled.div`
+  const Title = styled.h1`
    font-size: 2rem;
-   padding-bottom: 1rem;
+   a {
+    line-height: 2rem;
+   }
   `
   return (
     <Nav
     >
-      <Link to={`/`}><Title>Miranda Schreiber</Title></Link>
+      <Title><Link to={`/`}>Miranda Schreiber</Link></Title>
       <Link to={`/press`}>Selected Press</Link>
       <Link to={`/listen`}>Listen</Link>
       <Link to={`/publications`}>Selected Publications</Link>

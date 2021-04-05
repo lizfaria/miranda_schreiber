@@ -12,6 +12,8 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -33,15 +35,13 @@ module.exports = {
         path: `src/markdown-pages`,
       },
     },
-    // `gatsby-transformer-remark`,
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [`gatsby-remark-responsive-iframe`],
       },
     },
-    `gatsby-plugin-sharp`,
+
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
@@ -54,22 +54,22 @@ module.exports = {
     //     // icon: `src/images/favicon.svg`, // This path is relative to the root of the site.
     //   },
     // },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `Nunito\:300,400,400i,700`,
-          `open sans\:300,400,400i,600,700` // you can also specify font weights and styles
-        ],
-        display: 'swap'
-      }
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       `Nunito\:300,400,400i,700`,
+    //       `open sans\:300,400,400i,600,700` // you can also specify font weights and styles
+    //     ],
+    //     display: 'swap'
+    //   }
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-relative-images`,
+            resolve: `gatsby-remark-relative-images-v2`,
           },
           {
             resolve: `gatsby-remark-images`,

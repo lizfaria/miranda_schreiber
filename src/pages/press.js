@@ -14,20 +14,14 @@ const Press = ({data}) => {
           title="Miranda Schreiber Press"
           keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`, `health`, `equity`]}
         />
-        <h1>
+        <h2>
           {title}
-        </h1>
+        </h2>
         <p>{description}</p>
-        <ul>
-          {press.map(({link, publisher, year, title}) =>
-            <li>
-              <a href={link} target="_blank" rel="noreferrer">{title}</a>
-              <p>{publisher}</p>
-              <p>{year}</p>
-            
-            </li>
-          )}
-        </ul>
+        {press.map(({link, publisher, year, title}) =>
+          <p><span>{publisher}</span>, <span>{year}</span> — <span><a href={link} target="_blank" rel="noreferrer">{title}</a></span></p>
+        )}
+
       </Layout>
     )
 }

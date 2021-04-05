@@ -14,23 +14,26 @@ const Listen = ({ data }) => {
         title="Listen to Miranda Schreiber"
         keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`, `health`, `equity`]}
       />
-      <h1>
+      <h2>
         {title}
-      </h1>
+      </h2>
       <p>{description}</p>
-      <ul>
-        {listenLink.map(({ link, outlet, publication, year, title, embed }) => {
+
+        {listenLink.map(({ link, outlet, publication, year, title, embed }, index) => {
           return (
-            <li>
-              <a href={link} target="_blank" rel="noreferrer">{title}</a>
+            <div key={index}>
+              <h3>{title}</h3>
+              <p>{publication} -- {outlet}</p>
+              <div className="Container" dangerouslySetInnerHTML={{__html: embed.code}}></div>
+              {/* <a href={link} target="_blank" rel="noreferrer">{title}</a>
               <p>{outlet}</p>
               <p>{publication}</p>
               <p>{year}</p>
-              <div className="Container" dangerouslySetInnerHTML={{__html: embed.code}}></div>
-            </li>
+              <div className="Container" dangerouslySetInnerHTML={{__html: embed.code}}></div> */}
+            </div>
           )
         })}
-      </ul>
+  
     </Layout>
   )
 }

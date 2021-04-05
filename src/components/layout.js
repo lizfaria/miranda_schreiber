@@ -1,6 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
+
+// import "typeface-montserrat"
+// import "typeface-merriweather"
+// import "typeface-martel-sans"
 
 import { rhythm } from "../utils/typography"
 import Nav from "./nav"
@@ -10,7 +13,6 @@ const Layout = ({ children }) => {
     <Wrapper>
       <div
         style={{
-          maxWidth: rhythm(24),
           maxWidth: 1200,
           padding: 40,
           display: 'flex',
@@ -29,6 +31,26 @@ const Main = styled.main`
   width: calc(100%);
   padding: 0 40px;
   margin-left: 260px;
+  a {
+    color: #215a49;
+    &:hover {
+      color: #355F56;
+    }
+  };
+  h2, h3 {
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  h1, h2, h3 {
+    margin-top: 0,
+  }
 `
 
 const Wrapper = styled.div`

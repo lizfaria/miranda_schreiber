@@ -18,7 +18,7 @@ const IndexPage = ({data}) => {
         {/* <h1>
           {title}
         </h1> */}
-        <Img className="image" fluid={image.childImageSharp.fluid} alt="Headshot of Miranda Schreiber"/> 
+        <img className="image" src={image} alt="Headshot of Miranda Schreiber"/> 
        <p>{description}</p>
 
       </Layout>
@@ -35,13 +35,7 @@ export const pageQuery = graphql`
             description
             title
             path
-            image {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid_withWebp_noBase64
-                }
-              }
-            }
+            image 
           }
         }
       }

@@ -14,20 +14,14 @@ const Publications = ({data}) => {
           title="Miranda Schreiber Publications"
           keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`, `health`, `equity`]}
         />
-        <h1>
+        <h2>
           {title}
-        </h1>
+        </h2>
         <p>{description}</p>
-        <ul>
-          {publications.map(({link, outlet, year, title}) =>
-            <li>
-              <a href={link} target="_blank" rel="noreferrer">{title}</a>
-              <p>{outlet}</p>
-              <p>{year}</p>
-            
-            </li>
-          )}
-        </ul>
+        {publications.map(({link, outlet, year, title}) =>
+          <p><span>{year}</span>  <span>{outlet}</span> — <span><a href={link} target="_blank" rel="noreferrer">{title}</a></span></p>
+        )}
+   
       </Layout>
     )
 }
