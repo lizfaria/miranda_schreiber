@@ -7,5 +7,5 @@ contactLinks:
     link: miranda.schreiber@mail.utoronto.ca
   - title: twitter
     link: https://twitter.com/miranda_joli
-    username: miranda_joli
+    username: "@miranda_joli"
 ---
