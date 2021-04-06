@@ -23,13 +23,8 @@ const Listen = ({ data }) => {
           return (
             <div key={index}>
               <h3>{title}</h3>
-              <p>{publication} -- {outlet}</p>
+              <p>{publication} — {outlet}</p>
               <div className="Container" dangerouslySetInnerHTML={{__html: embed.code}}></div>
-              {/* <a href={link} target="_blank" rel="noreferrer">{title}</a>
-              <p>{outlet}</p>
-              <p>{publication}</p>
-              <p>{year}</p>
-              <div className="Container" dangerouslySetInnerHTML={{__html: embed.code}}></div> */}
             </div>
           )
         })}

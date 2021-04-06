@@ -2,6 +2,7 @@ import { graphql } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styled from "styled-components"
 
 const Press = ({data}) => {
     const { allMarkdownRemark } = data 
@@ -19,13 +20,17 @@ const Press = ({data}) => {
         </h2>
         <p>{description}</p>
         {press.map(({link, publisher, year, title}) =>
-          <p><span>{publisher}</span>, <span>{year}</span> — <span><a href={link} target="_blank" rel="noreferrer">{title}</a></span></p>
+          <p><Bold>{publisher}</Bold>, {year} — <a href={link} target="_blank" rel="noreferrer">{title}</a></p>
         )}
 
       </Layout>
     )
 }
 export default Press
+
+const Bold = styled.span`
+  font-weight: bold;
+`
 
 export const pageQuery = graphql`
   query PressPageQuery {

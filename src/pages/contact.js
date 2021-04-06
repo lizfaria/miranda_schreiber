@@ -4,11 +4,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
 import { FiTwitter } from "@react-icons/all-files/fi/FiTwitter"
+import { FiMail } from "@react-icons/all-files/fi/FiMail"
 
 const Contact = ({data}) => {
     const { allMarkdownRemark } = data 
     const { frontmatter } = allMarkdownRemark.edges[0].node;
     const {description, title, contactLinks} = frontmatter;
+
   const handleClick = (e) => {
     return e.target.value.length > 0 ?
     e.target.nextElementSibling.classList.add('filled')
@@ -34,7 +36,13 @@ const Contact = ({data}) => {
         <p>{description}</p>
         
           {contactLinks.map(({link, username, title}) =>
-             <div>{link.split('.').includes('twitter') && (<FiTwitter />)}<a href={link} target="_blank" rel="noreferrer">{username}</a></div> 
+             <ContactItem>
+               {title === 'twitter' ? (<FiTwitter />) : title === 'email' ? <FiMail /> : null}
+               {title === 'email' 
+               ? <p>{username}</p> 
+               : <a href={link} target="_blank" rel="noreferrer">{username}</a>
+               }
+              </ContactItem> 
           )}
       
 
@@ -58,24 +66,42 @@ const Contact = ({data}) => {
 }
 export default Contact
 
+const ContactItem = styled.div`
+  display: flex;
+  align-items: center;
+  p, a {
+    padding: 0;
+    margin: 0;
+    margin-left: .85rem;
+  }
+  svg {
+    font-size: 18px;
+  }
+`
 
 
 const Form = styled.form`
-margin-top: 2rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   max-width: 400px;
+  border-top: 1px solid black;
   fieldset {
     position: relative;
     margin: 0;
     padding: 0;
-
+    border: none;
+    &:focus-within {
+      border-top: none;
+      box-shadow: none;
+    }
   };
   label {
     position: absolute;
-    left: .85rem;
-    right: .85rem;
-    top: .85rem;
+    padding-left: .85rem;
+    left: 0;
+    right: 0;
+    top: 0;
     bottom: 0;
     width: 100%;
     transition: all 0.2s ease-in-out; 
@@ -83,13 +109,20 @@ margin-top: 2rem;
   label.filled {
       top: 0;
       font-size: 0.75rem;
-      color: #355F56; 
+      color: #4f4c72; 
   }
   input, textArea {
     z-index: 1;
     padding: 1rem;
     width: 100%;
-    border: none;
+   border-top: none;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    transition: all .3s ease-out;
+    &:focus {
+      border-top: none;
+    }
   };
   button {
     padding: 1rem;
@@ -97,6 +130,9 @@ margin-top: 2rem;
     background-color: #fff;
     cursor: pointer;
     margin-top: 1rem;
+    &:hover {
+      background-color: #f2ecff;
+    }
   }
 `
 
