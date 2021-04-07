@@ -7,6 +7,9 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
+    "@reach/dialog": "^0.15.0",
+    "@reach/tabs": "^0.15.0",
+    "@reach/visually-hidden": "^0.15.0",
     "@react-icons/all-files": "^4.1.0",
     "babel-plugin-styled-components": "^1.10.0",
     "dotenv": "^8.2.0",
@@ -41,6 +44,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-markdown": "^4.2.2",
+    "react-netlify-identity-widget": "^0.2.7",
     "react-switch": "^5.0.0",
     "react-typography": "^0.16.19",
     "styled-components": "^4.2.0",
