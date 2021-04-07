@@ -32,13 +32,7 @@ export const pageQuery = graphql`
             description
             title
             path
-            image {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid_withWebp_noBase64
-                }
-              }
-            }
+            image
           }
         }
       }
