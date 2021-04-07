@@ -11,6 +11,7 @@
     "@reach/tabs": "^0.15.0",
     "@reach/visually-hidden": "^0.15.0",
     "@react-icons/all-files": "^4.1.0",
+    "axios": "^0.21.1",
     "babel-plugin-styled-components": "^1.10.0",
     "dotenv": "^8.2.0",
     "gatsby": "^2.3.25",

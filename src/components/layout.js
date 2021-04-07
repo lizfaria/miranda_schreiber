@@ -44,7 +44,9 @@ const Main = styled.main`
     font-size: 1.2rem;
     margin-bottom: 4rem;
     font-family: Montserrat,sans-serif;
-    text-transform: uppercase
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
   }
   h3 {
     font-size: 1rem;

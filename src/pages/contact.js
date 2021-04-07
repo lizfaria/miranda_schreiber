@@ -1,5 +1,6 @@
 import { graphql } from "gatsby"
-import React from "react"
+import React, { useState } from "react"
+import axios from "axios"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
@@ -10,6 +11,10 @@ const Contact = ({data}) => {
     const { allMarkdownRemark } = data 
     const { frontmatter } = allMarkdownRemark.edges[0].node;
     const {description, title, contactLinks} = frontmatter;
+    const [serverState, setServerState] = useState({
+      submitting: false,
+      status: null
+    });
 
   const handleClick = (e) => {
     return e.target.value.length > 0 ?
@@ -24,6 +29,35 @@ const Contact = ({data}) => {
     e.target.nextElementSibling.classList.remove('filled')
     : null
   }
+
+  
+  const handleServerResponse = (ok, msg, form) => {
+    setServerState({
+      submitting: false,
+      status: { ok, msg }
+    });
+    if (ok) {
+      form.reset();
+    }
+  };
+
+  const handleOnSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    setServerState({ submitting: true });
+    axios({
+      method: "post",
+      url: "https://getform.io/f/97e2f412-6389-4fde-b0c1-7690d93957fb",
+      data: new FormData(form)
+    })
+      .then(r => {
+        handleServerResponse(true, "Thanks!", form);
+      })
+      .catch(r => {
+        handleServerResponse(false, r.response.data.error, form);
+      });
+  };
+
     return (
       <Layout>
         <SEO
@@ -46,7 +80,7 @@ const Contact = ({data}) => {
           )}
       
 
-        <Form method="post" action="https://getform.io/{your-unique-getform-endpoint}">
+        <Form onSubmit={handleOnSubmit}>
           <fieldset>
             <input type="text" name="name" id="name" required onChange={e => handleClick(e)} onFocus={e => handleFocus(e) } onBlur={e => handleBlur(e) }/>
             <label htmlFor="name">Name</label>
