@@ -12,7 +12,7 @@ const Press = ({data}) => {
     return (
       <Layout>
         <SEO
-          title="Miranda Schreiber Press"
+          title="Press"
           keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`, `health`, `equity`]}
         />
         <h2>

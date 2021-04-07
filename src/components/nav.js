@@ -12,11 +12,14 @@ const Nav = () => {
   const handleCloseMobileMenu = () => {
     setMobileNavOpen(false)
   }
-  console.log(mobileNavOpen)
+  const activeStyle = {
+    color: '#adadad',
+        // color: #215a49;
+    borderBottom: '1px dotted #215a49',
+  }
   return (
     <>
     <MobileNav >
-     
      <Title><Link to={`/`}>Miranda Schreiber</Link></Title>
      <Button onClick={handleOpenMobileMenu}><FiMenu /></Button>
     </MobileNav>
@@ -24,10 +27,10 @@ const Nav = () => {
     >
       {mobileNavOpen && <Button onClick={handleCloseMobileMenu}><FiX /></Button>}
       <Title><Link to={`/`}>Miranda Schreiber</Link></Title>
-      <Link to={`/press`}>Selected Press</Link>
-      <Link to={`/listen`}>Listen</Link>
-      <Link to={`/publications`}>Selected Publications</Link>
-      <Link to={`/contact`}>Contact</Link>
+      <Link activeStyle={activeStyle} to={`/press`}>Selected Press</Link>
+      <Link activeStyle={activeStyle} to={`/listen`}>Listen</Link>
+      <Link activeStyle={activeStyle} to={`/publications`}>Selected Publications</Link>
+      <Link activeStyle={activeStyle} to={`/contact`}>Contact</Link>
     </NavWrapper>
     </>
   )
@@ -67,7 +70,7 @@ const NavWrapper = styled.nav`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     padding-bottom: 2rem;
     width: 260px;
     a {
@@ -77,9 +80,10 @@ const NavWrapper = styled.nav`
       color: #1f1f1f;
       transition: all .2s ease-out;
       border-bottom: 1px dotted transparent;
+      font-weight: bold;
       &:hover {
-        // color: #adadad;
-        color: #215a49;
+        color: #adadad;
+        // color: #215a49;
         border-bottom: 1px dotted #215a49;
       }
     }
@@ -96,9 +100,10 @@ const NavWrapper = styled.nav`
       justify-content: flex-start;
       transition: all .2s ease-in-out;
       z-index: 1;
-
+      padding: 40px;
       a {
-        padding: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
       };
     };
 
@@ -116,6 +121,7 @@ const NavWrapper = styled.nav`
     line-height: 2rem;
     text-decoration: none;
     box-shadow: none;
+    font-weight: normal;
     color: #1f1f1f;
     &:hover {
     border-bottom: none;

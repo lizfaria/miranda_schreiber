@@ -11,7 +11,7 @@ const Publications = ({data}) => {
     return (
       <Layout>
         <SEO
-          title="Miranda Schreiber Publications"
+          title="Publications"
           keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`, `health`, `equity`]}
         />
         <h2>

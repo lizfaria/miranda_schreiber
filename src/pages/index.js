@@ -12,7 +12,7 @@ const IndexPage = ({data}) => {
     return (
       <Layout>
         <SEO
-          title="Miranda Schreiber"
+          title="Home"
           keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`, `health`, `equity`]}
         />
         <img className="image" src={image} alt="Headshot of Miranda Schreiber"/> 
@@ -32,7 +32,13 @@ export const pageQuery = graphql`
             description
             title
             path
-            image 
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
           }
         }
       }

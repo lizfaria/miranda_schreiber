@@ -19,7 +19,12 @@ const Main = styled.main`
     margin-left: 0;
     padding: 0;
   }
-
+  @media(min-width: 768px) {
+    max-width: 468px;
+  }
+  @media(min-width: 920px) {
+    max-width: 600px;
+  }
   a {
     color: #215a49;
     border-bottom: 1px solid #215a49;
@@ -31,12 +36,15 @@ const Main = styled.main`
       border-bottom: 1px dotted #275475;
     }
   };
+
   h2, h3 {
     // text-transform: uppercase;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 4rem;
+    font-family: Montserrat,sans-serif;
+    text-transform: uppercase
   }
   h3 {
     font-size: 1rem;
@@ -60,9 +68,5 @@ const Wrapper = styled.div`
    };
 `
 
-const Footer = styled.footer`
-  text-align: center;
-  margin: 24px;
-`
 
 export default Layout

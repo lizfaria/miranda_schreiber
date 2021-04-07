@@ -11,7 +11,7 @@ const Listen = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="Listen to Miranda Schreiber"
+        title="Listen"
         keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`, `health`, `equity`]}
       />
       <h2>

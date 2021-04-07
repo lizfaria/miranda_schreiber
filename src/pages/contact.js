@@ -27,7 +27,7 @@ const Contact = ({data}) => {
     return (
       <Layout>
         <SEO
-          title="Contact Miranda Schreiber"
+          title="Contact"
           keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`, `health`, `equity`]}
         />
         <h2>
