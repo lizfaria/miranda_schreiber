@@ -3,7 +3,7 @@ backend:
   repo: lizfaria/miranda_schreiber
 
 media_folder: static/assets
-public_folder: /assets
+public_folder: assets
 
 collections:
   - name: pages
