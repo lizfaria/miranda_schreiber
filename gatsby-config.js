@@ -12,8 +12,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -35,6 +33,8 @@ module.exports = {
         path: `src/markdown-pages`,
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     // {
     //   resolve: `gatsby-transformer-remark`,
     //   options: {
