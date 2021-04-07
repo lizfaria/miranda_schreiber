@@ -88,7 +88,7 @@ module.exports = {
       options: {
         url: `https://thirsty-tereshkova-190ea5.netlify.app/` // required!
       }
-    }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
