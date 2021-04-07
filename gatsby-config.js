@@ -35,12 +35,12 @@ module.exports = {
         path: `src/markdown-pages`,
       },
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [`gatsby-remark-responsive-iframe`],
-      },
-    },
+    // {
+    //   resolve: `gatsby-transformer-remark`,
+    //   options: {
+    //     plugins: [`gatsby-remark-responsive-iframe`],
+    //   },
+    // },
 
     // {
     //   resolve: `gatsby-plugin-manifest`,
