@@ -27,9 +27,9 @@ const Nav = () => {
     >
       {mobileNavOpen && <Button onClick={handleCloseMobileMenu}><FiX /></Button>}
       <Title><Link to={`/`}>Miranda Schreiber</Link></Title>
-      <Link activeStyle={activeStyle} to={`/press`}>Selected Press</Link>
-      <Link activeStyle={activeStyle} to={`/listen`}>Listen</Link>
       <Link activeStyle={activeStyle} to={`/publications`}>Selected Publications</Link>
+      <Link activeStyle={activeStyle} to={`/listen`}>Listen</Link>
+      <Link activeStyle={activeStyle} to={`/press`}>Selected Press</Link>
       <Link activeStyle={activeStyle} to={`/contact`}>Contact</Link>
     </NavWrapper>
     </>
@@ -90,6 +90,7 @@ const NavWrapper = styled.nav`
   
     @media (max-width: 768px) {
       background-color: white;
+      opacity: 0;
       top: 0;
       right: 0;
       left: 100vw;
@@ -98,7 +99,7 @@ const NavWrapper = styled.nav`
       height: 100vh;
       align-items: flex-start;
       justify-content: flex-start;
-      transition: all .2s ease-in-out;
+      transition: left .2s ease-in-out;
       z-index: 1;
       padding: 40px;
       a {
@@ -122,9 +123,11 @@ const NavWrapper = styled.nav`
     text-decoration: none;
     box-shadow: none;
     font-weight: normal;
-    color: #1f1f1f;
+    color: #d32f2f;
+    transition: color .2s ease-in-out;
     &:hover {
     border-bottom: none;
+    color: #34a3a3;
     }
    }
   `

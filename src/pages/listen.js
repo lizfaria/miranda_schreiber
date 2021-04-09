@@ -2,6 +2,7 @@ import { graphql } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styled from "styled-components"
 
 const Listen = ({ data }) => {
   const { allMarkdownRemark } = data
@@ -21,11 +22,13 @@ const Listen = ({ data }) => {
 
         {listenLink.map(({ link, outlet, publication, year, title, embed }, index) => {
           return (
-            <div key={index}>
+            <ItemWrapper key={index}>
               <h3>{title}</h3>
               <p>{publication} — {outlet}</p>
-              <div className="Container" dangerouslySetInnerHTML={{__html: embed.code}}></div>
-            </div>
+              <Video>
+                <div className="Container" dangerouslySetInnerHTML={{__html: embed.code}}></div>
+              </Video>
+            </ItemWrapper>
           )
         })}
   
@@ -33,6 +36,24 @@ const Listen = ({ data }) => {
   )
 }
 export default Listen
+
+const ItemWrapper = styled.div`
+  margin-bottom: 40px;
+`
+
+const Video = styled.div`
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+`
 
 export const pageQuery = graphql`
   query ListenPageQuery {

@@ -15,7 +15,9 @@ const IndexPage = ({data}) => {
           title="Home"
           keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`, `health`, `equity`]}
         />
-        <img className="image" src={image} alt="Headshot of Miranda Schreiber"/> 
+        <div>
+          <img src={image} alt="Headshot of Miranda Schreiber"/> 
+        </div>
        <p>{description}</p>
 
       </Layout>

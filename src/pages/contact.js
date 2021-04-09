@@ -15,7 +15,8 @@ const Contact = ({data}) => {
       submitting: false,
       status: null
     });
-
+    console.log(serverState)
+    const submitted = true;
   const handleClick = (e) => {
     return e.target.value.length > 0 ?
     e.target.nextElementSibling.classList.add('filled')
@@ -93,8 +94,14 @@ const Contact = ({data}) => {
             <textarea name="message" id="message" rows="5" required onChange={e => handleClick(e)} onFocus={e => handleFocus(e) } onBlur={e => handleBlur(e) }/>
             <label htmlFor="message">Message</label>
           </fieldset>
-          <button type="submit">Send Message</button>
+          <button type="submit">{
+            serverState.status?.submitting === true
+            ? 'Submitting'
+            : serverState.status?.ok
+            ? 'Message Sent' 
+            : 'Send Message'}</button>
         </Form>
+        
       </Layout>
     )
 }
@@ -132,40 +139,48 @@ const Form = styled.form`
   };
   label {
     position: absolute;
-    padding-left: .85rem;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    left: 1.25rem;
+    right: 1.25rem;
+    top: 1.25rem;
+    bottom: 1.25rem;
     width: 100%;
     transition: all 0.2s ease-in-out; 
   };
   label.filled {
+      left: 1.25rem;
+      right: 0;
       top: 0;
+      bottom: 0;
       font-size: 0.75rem;
       color: #4f4c72; 
   }
   input, textArea {
     z-index: 1;
-    padding: 1rem;
+    padding: 1.5rem 1.25rem;
     width: 100%;
-   border-top: none;
+    border-top: 1px solid transparent;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
     transition: all .3s ease-out;
     &:focus {
-      border-top: none;
+      border-top: 1px solid black;
+      box-shadow: none;
+      border-bottom: 1px solid black;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
     }
   };
   button {
-    padding: 1rem;
+    padding: 1.25rem;
     border: 1px solid #000;
     background-color: #fff;
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: 1.25rem;
+    transition: all .2s ease-in-out;
     &:hover {
-      background-color: #f2ecff;
+      background-color: #335C67;
+      color: white;
     }
   }
 `

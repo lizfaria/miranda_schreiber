@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
 
 const Main = styled.main`
   width: calc(100%);
-  padding: 0 40px;
+  padding: 3.5rem 40px 40px;
   margin-left: 260px;
   @media(max-width: 768px) {
     margin-left: 0;
@@ -26,41 +26,42 @@ const Main = styled.main`
     max-width: 600px;
   }
   a {
-    color: #215a49;
-    border-bottom: 1px solid #215a49;
+    color: #1976d2;
+    border-bottom: 1px dotted #1976d2;
     text-decoration: none;
     box-shadow: none;
     transition: all 0.3s ease-out;
     &:hover {
       color: #275475;
-      border-bottom: 1px dotted #275475;
+      border-bottom: 1px solid #275475;
     }
   };
-
   h2, h3 {
-    // text-transform: uppercase;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #d32f2f;
+
   }
   h2 {
     font-size: 1.2rem;
     margin-bottom: 4rem;
-    font-family: Montserrat,sans-serif;
-    text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-weight: 500;
   }
   h3 {
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    color: #4F4C72;
+    letter-spacing: 1px;
+
   }
   h1, h2, h3 {
-    margin-top: 0,
+    margin-top: 0;
   }
 `
 
 const Wrapper = styled.div`
+  background-color: #FBFFFE;
   min-height: 100vh;
-  max-width: 1200px;
   padding: 40px;
   display: flex;
   justifyContent: flex-start;
@@ -68,6 +69,7 @@ const Wrapper = styled.div`
   @media (max-width: 768px) {
     display: block;
    };
+  color: #01020A;
 `
 
 
