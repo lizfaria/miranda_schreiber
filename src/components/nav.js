@@ -130,7 +130,6 @@ const NavWrapper = styled.header`
       @media (min-width: 769px) {
         button {
           display: none;
-
         }
       };
     };

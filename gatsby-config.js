@@ -65,19 +65,6 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Miranda Schreiber`,
-        short_name: `Miranda Schreiber`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        // edit below
-        icon: `content/assets/gatsby-icon.png`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
