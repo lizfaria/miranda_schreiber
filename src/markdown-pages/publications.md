@@ -10,4 +10,8 @@ publications:
     year: "2020"
     outlet: Hampton Institute
     link: https://www.hamptonthink.org/read/on-the-ideal-canada-and-its-consequences
+  - link: https://www.cmaj.ca/content/193/16/E562?fbclid=IwAR31nc02Ai4nZWYDhzsHxLWQJdwwH7F4bYe6kwrHOTEealNZreUHGlA8esM
+    title: The case for a Canadian standard for 2SLGBTQIA+ medical education
+    year: "2021"
+    outlet: CMAJ
 ---
