@@ -14,4 +14,8 @@ publications:
     title: The case for a Canadian standard for 2SLGBTQIA+ medical education
     year: "2021"
     outlet: CMAJ
+  - title: The disabled doctors not believed by their colleagues
+    year: "2021"
+    outlet: BBC
+    link: https://www.bbc.com/news/disability-56244376?fbclid=IwAR1b8QOQQIntwAvZtqjwYGN27GjCgGR2iRoEMucpOmfXN6F3hXXAs4mCmkc
 ---
