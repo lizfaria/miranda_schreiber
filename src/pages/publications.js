@@ -19,7 +19,7 @@ const Publications = ({data}) => {
         </h2>
         <p>{description}</p>
         {publications.map(({link, outlet, year, title}) =>
-          <p>{year} {outlet} — <a href={link} target="_blank" rel="noreferrer">{title}</a></p>
+          <p>{year}, {outlet} — <a href={link} target="_blank" rel="noreferrer">{title}</a></p>
         )}
    
       </Layout>

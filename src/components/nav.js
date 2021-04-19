@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { FiMenu } from "@react-icons/all-files/fi/FiMenu"
@@ -7,31 +7,34 @@ import { FiX } from "@react-icons/all-files/fi/FiX"
 const Nav = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const handleOpenMobileMenu = () => {
-   setMobileNavOpen(true)
+    setMobileNavOpen(true)
   }
   const handleCloseMobileMenu = () => {
     setMobileNavOpen(false)
   }
   const activeStyle = {
     color: '#adadad',
-        // color: #215a49;
+    // color: #215a49;
     borderBottom: '1px dotted #215a49',
   }
   return (
     <>
-    <MobileNav >
-     <Title><Link to={`/`}>Miranda Schreiber</Link></Title>
-     <Button onClick={handleOpenMobileMenu}><FiMenu /></Button>
-    </MobileNav>
-    <NavWrapper className={mobileNavOpen ? 'open' : ''}
-    >
-      {mobileNavOpen && <Button onClick={handleCloseMobileMenu}><FiX /></Button>}
-      <Title><Link to={`/`}>Miranda Schreiber</Link></Title>
-      <Link activeStyle={activeStyle} to={`/publications`}>Selected Publications</Link>
-      <Link activeStyle={activeStyle} to={`/listen`}>Listen</Link>
-      <Link activeStyle={activeStyle} to={`/press`}>Selected Press</Link>
-      <Link activeStyle={activeStyle} to={`/contact`}>Contact</Link>
-    </NavWrapper>
+      <MobileNav >
+        <Title><Link to={`/`}>Miranda Schreiber</Link></Title>
+        <Button onClick={handleOpenMobileMenu}><FiMenu /></Button>
+      </MobileNav>
+      <NavWrapper className={mobileNavOpen ? 'open' : ''}
+      >
+        {mobileNavOpen && <Button onClick={handleCloseMobileMenu}><FiX /></Button>}
+        <Title><Link to={`/`}>Miranda Schreiber</Link></Title>
+        <nav>
+          <Link activeStyle={activeStyle} to={`/publications`}>Selected Publications</Link>
+          <Link activeStyle={activeStyle} to={`/listen`}>Listen</Link>
+          <Link activeStyle={activeStyle} to={`/press`}>Selected Press</Link>
+          <Link activeStyle={activeStyle} to={`/contact`}>Contact</Link>
+        </nav>
+
+      </NavWrapper>
     </>
   )
 }
@@ -48,13 +51,16 @@ svg {
 };
 `
 
-const MobileNav = styled.nav`
+const MobileNav = styled.header`
 display: none;
 margin-bottom: 2rem;
 h1 {
   padding: 0;
   margin: 0;
 }
+@media (min-width: 769px) {
+  display: none;
+ };
 
 @media (max-width: 768px) {
  display: flex;
@@ -63,16 +69,19 @@ h1 {
 };
 `
 
-const NavWrapper = styled.nav`
+const NavWrapper = styled.header`
     position: fixed;
     top: 2rem;
     left: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
     padding-bottom: 2rem;
     width: 260px;
+    nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+  
     a {
       text-decoration: none;
       margin-bottom: .5rem;
@@ -109,15 +118,26 @@ const NavWrapper = styled.nav`
     };
 
     &.open {
+      button {
+        position: relative;
+        left: calc(100% - 56px);
+     }
       @media (max-width: 768px) {
         left: 0;
         opacity: 1;
       };
+
+      @media (min-width: 769px) {
+        button {
+          display: none;
+
+        }
+      };
     };
   `
-  const Title = styled.h1`
+const Title = styled.h1`
    font-size: 2rem;
-
+    padding-top: 4px;
    a {
     line-height: 2rem;
     text-decoration: none;

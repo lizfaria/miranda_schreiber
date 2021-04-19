@@ -15,20 +15,22 @@ const Listen = ({ data }) => {
         title="Listen"
         keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`, `health`, `equity`]}
       />
-      <h2>
-        {title}
-      </h2>
+      <header>
+        <h2>
+          {title}
+        </h2>
+      </header>
       <p>{description}</p>
 
         {listenLink.map(({ link, outlet, publication, year, title, embed }, index) => {
           return (
-            <ItemWrapper key={index}>
+            <div key={index}>
               <h3>{title}</h3>
               <p>{publication} — {outlet}</p>
               <Video>
                 <div className="Container" dangerouslySetInnerHTML={{__html: embed.code}}></div>
               </Video>
-            </ItemWrapper>
+            </div>
           )
         })}
   
@@ -36,10 +38,6 @@ const Listen = ({ data }) => {
   )
 }
 export default Listen
-
-const ItemWrapper = styled.div`
-  margin-bottom: 40px;
-`
 
 const Video = styled.div`
   position: relative;
