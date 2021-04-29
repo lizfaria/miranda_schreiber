@@ -30,6 +30,7 @@ const SEO = ({ title, description, article }) => {
 
   return (
     <Helmet title={seo.title}>
+      <meta name="google-site-verification" content="go2Fk3_JvZriF317pXXbFWkNg-w1yqrbyrm6XnTyvc0" />
       <meta name="description" content={seo.description} />
       {seo.url && <meta property="og:url" content={seo.url} />}
       {(article ? true : null) && <meta property="og:type" content="article" />}
