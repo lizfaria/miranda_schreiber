@@ -60,7 +60,7 @@ const Main = styled.main`
 `
 
 const Wrapper = styled.div`
-  background-color: #FBFFFE;
+  background-color: #f5f5f5;
   min-height: 100vh;
   padding: 40px;
   display: flex;

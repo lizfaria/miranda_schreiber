@@ -1,7 +1,7 @@
 {
   "name": "miranda-schreiber",
   "private": true,
-  "description": "portfolio powered by Netlify CMS, based on the default blog starter",
+  "description": "miranda schreiber portfolio",
   "version": "1.0.0",
   "author": "liz faria",
   "dependencies": {

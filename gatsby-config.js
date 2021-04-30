@@ -56,6 +56,18 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Miranda Schreiber`,
+        short_name: `Miranda Schreiber`,
+        start_url: `/`,
+        background_color: `#f1e7e1`,
+        theme_color: `rgb(211, 47, 47)`,
+        display: `minimal-ui`,
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
       resolve: `gatsby-plugin-netlify-identity`,
       options: {
         url: `https://thirsty-tereshkova-190ea5.netlify.app/` // required!

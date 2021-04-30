@@ -15,23 +15,23 @@ const Contact = ({data}) => {
       submitting: false,
       status: null
     });
-    console.log(serverState)
-    const submitted = true;
+
   const handleClick = (e) => {
     return e.target.value.length > 0 ?
     e.target.nextElementSibling.classList.add('filled')
     : e.target.nextElementSibling.classList.remove('filled')
   }
+
   const handleFocus = (e) => {
     return e.target.nextElementSibling.classList.add('filled')
   }
+
   const handleBlur = (e) => {
     return e.target.value.length <= 0 ? 
     e.target.nextElementSibling.classList.remove('filled')
     : null
   }
 
-  
   const handleServerResponse = (ok, msg, form) => {
     setServerState({
       submitting: false,
@@ -48,7 +48,7 @@ const Contact = ({data}) => {
     setServerState({ submitting: true });
     axios({
       method: "post",
-      url: "https://getform.io/f/97e2f412-6389-4fde-b0c1-7690d93957fb",
+      url: process.env.GETFORM_URL,
       data: new FormData(form)
     })
       .then(r => {
@@ -58,6 +58,8 @@ const Contact = ({data}) => {
         handleServerResponse(false, r.response.data.error, form);
       });
   };
+
+  const formSubmitting = serverState.status?.submitting === true
 
     return (
       <Layout>
@@ -94,8 +96,8 @@ const Contact = ({data}) => {
             <textarea name="message" id="message" rows="5" required onChange={e => handleClick(e)} onFocus={e => handleFocus(e) } onBlur={e => handleBlur(e) }/>
             <label htmlFor="message">Message</label>
           </fieldset>
-          <button type="submit">{
-            serverState.status?.submitting === true
+          <button disabled={formSubmitting} aria-busy={formSubmitting} type="submit">{
+            formSubmitting
             ? 'Submitting'
             : serverState.status?.ok
             ? 'Message Sent' 
