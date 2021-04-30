@@ -64,8 +64,8 @@ const Wrapper = styled.div`
   min-height: 100vh;
   padding: 40px;
   display: flex;
-  justifyContent: flex-start;
-  alignItems: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
   @media (max-width: 768px) {
     display: block;
    };

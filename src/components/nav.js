@@ -13,7 +13,8 @@ const Nav = () => {
     setMobileNavOpen(false)
   }
   const activeStyle = {
-    color: '#adadad',
+    color: '#00838a',
+    // color: '#adadad',
     // color: #215a49;
     borderBottom: '1px dotted #215a49',
   }
@@ -91,7 +92,8 @@ const NavWrapper = styled.header`
       border-bottom: 1px dotted transparent;
       font-weight: bold;
       &:hover {
-        color: #adadad;
+        color: #00838a;
+        /* color: #adadad; */
         // color: #215a49;
         border-bottom: 1px dotted #215a49;
       }
@@ -146,7 +148,8 @@ const Title = styled.h1`
     transition: color .2s ease-in-out;
     &:hover {
     border-bottom: none;
-    color: #34a3a3;
+    /* color: #34a3a3; */
+    color: #00838a;
     }
    }
   `
