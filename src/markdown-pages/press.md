@@ -20,4 +20,8 @@ press:
       researchers warn
     link: https://www.cbc.ca/news/canada/toronto/lgbtq-health-medical-school-1.6080793
     year: "2021"
+  - publisher: The Tyee
+    title: Doctors Call for Queer Curriculum in Medical Schools
+    link: https://thetyee.ca/News/2021/07/28/Doctors-Call-Queer-Curriculum-Medical-Schools/
+    year: "2021"
 ---
