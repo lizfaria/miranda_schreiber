@@ -1,6 +1,6 @@
 ---
 path: /press
-title: Selected Press
+title: Press
 press:
   - publisher: Bustle
     title: During COVID, Queer Folks Are Trying To Create Community & Joy
