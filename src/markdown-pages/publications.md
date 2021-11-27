@@ -18,4 +18,8 @@ publications:
     year: "2021"
     outlet: BBC
     link: https://www.bbc.com/news/disability-56244376?fbclid=IwAR1b8QOQQIntwAvZtqjwYGN27GjCgGR2iRoEMucpOmfXN6F3hXXAs4mCmkc
+  - link: https://thewalrus.ca/my-day-in-zoom-court-virtual-trials-are-a-better-option-for-sexual-assault-survivors/
+    title: My Day in Zoom Court
+    year: "2021"
+    outlet: The Walrus
 ---
