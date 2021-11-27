@@ -1,6 +1,6 @@
 ---
 path: /publications
-title: Selected Publications
+title: Publications
 publications:
   - title: We need full data to assess impact of COVID-19 on LGBTQ people
     year: "2020"
