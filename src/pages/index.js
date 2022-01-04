@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
+import styled from "styled-components"
 
 const IndexPage = ({data}) => {
     const { allMarkdownRemark } = data 
@@ -13,13 +14,18 @@ const IndexPage = ({data}) => {
       <Layout>
         <SEO
           title="Home"
-          keywords={[`writer`, `activist`, `lgbtq`, `philosophy`, `medicine`, `health`, `equity`]}
+          keywords={[`writer`]}
         />
         <div>
-          <img src={image} alt="Headshot of Miranda Schreiber"/> 
+          <ImgContainer>
+            <img src={image} alt="Headshot of Rachel Gerry"/>       
+          </ImgContainer>
         </div>
-       <p>{description}</p>
-
+       {/* <div>{description}</div> */}
+        <p>I am a freelance writer based in Toronto, Canada. My essays on books and
+          culture have appeared in The <a>Literary Review of Canada</a>, POV Magazine, Prism
+          International, and other venues. Other hats: publishing assistant at Book*hug Press;
+          reader at Brick Literary Journal.</p>
       </Layout>
     )
 }
@@ -42,3 +48,11 @@ export const pageQuery = graphql`
   }
 `;
 
+const ImgContainer = styled.div`
+  text-align: right;
+  margin-right: 40px;
+  @media(max-width: 768px) {
+    margin:0 auto;
+    text-align: center;
+  }
+`

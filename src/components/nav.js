@@ -13,26 +13,22 @@ const Nav = () => {
     setMobileNavOpen(false)
   }
   const activeStyle = {
-    color: '#00838a',
-    // color: '#adadad',
-    // color: #215a49;
-    borderBottom: '1px dotted #215a49',
+    color: '#a3a3a3'
   }
   return (
     <>
       <MobileNav >
-        <Title><Link to={`/`}>Miranda Schreiber</Link></Title>
+        <Title><Link to={`/`}>RACHEL<br/> GERRY</Link></Title>
         <Button onClick={handleOpenMobileMenu}><FiMenu /></Button>
       </MobileNav>
       <NavWrapper className={mobileNavOpen ? 'open' : ''}
       >
         {mobileNavOpen && <Button onClick={handleCloseMobileMenu}><FiX /></Button>}
-        <Title><Link to={`/`}>Miranda Schreiber</Link></Title>
+        <Title><Link to={`/`}>RACHEL<br/> GERRY</Link></Title>
         <nav>
-          <Link activeStyle={activeStyle} to={`/publications`}>Selected Publications</Link>
-          <Link activeStyle={activeStyle} to={`/listen`}>Listen</Link>
-          <Link activeStyle={activeStyle} to={`/press`}>Selected Press</Link>
-          <Link activeStyle={activeStyle} to={`/contact`}>Contact</Link>
+          <Link activeStyle={activeStyle} to={`/`}>ABOUT</Link>
+          <Link activeStyle={activeStyle} to={`/publications`}>SELECTED WRITING</Link>
+          <Link activeStyle={activeStyle} to={`/contact`}>CONTACT</Link>
         </nav>
 
       </NavWrapper>
@@ -72,10 +68,10 @@ h1 {
 
 const NavWrapper = styled.header`
     position: fixed;
-    top: 2rem;
-    left: 3rem;
-    padding-bottom: 2rem;
-    width: 260px;
+    /* top: 2rem; */
+    /* left: 3rem; */
+    /* padding-bottom: 2rem; */
+    width: 285px;
     nav {
       display: flex;
       flex-direction: column;
@@ -84,18 +80,21 @@ const NavWrapper = styled.header`
     }
   
     a {
-      text-decoration: none;
+      font-family: Signika, sans-serif;
+      font-size: 13px;
+      text-decoration: uppercase;
       margin-bottom: .5rem;
       box-shadow: none;
-      color: #1f1f1f;
+      color: #000;
       transition: all .2s ease-out;
       border-bottom: 1px dotted transparent;
-      font-weight: bold;
+      font-weight: 400;
+      letter-spacing: .15em;
       &:hover {
-        color: #00838a;
+        color: #a3a3a3;
         /* color: #adadad; */
         // color: #215a49;
-        border-bottom: 1px dotted #215a49;
+        /* border-bottom: 1px dotted #215a49; */
       }
     }
   
@@ -122,7 +121,9 @@ const NavWrapper = styled.header`
     &.open {
       button {
         position: relative;
-        left: calc(100% - 56px);
+        left: calc(100% - 36px);
+        top: -10px;
+        
      }
       @media (max-width: 768px) {
         left: 0;
@@ -137,19 +138,23 @@ const NavWrapper = styled.header`
     };
   `
 const Title = styled.h1`
-   font-size: 2rem;
-    padding-top: 4px;
+   font-size: 40px;
+   margin-top: 0;
    a {
+    font-family: Signika, sans-serif;
+    font-size: 40px;
     line-height: 2rem;
     text-decoration: none;
     box-shadow: none;
-    font-weight: normal;
-    color: #d32f2f;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    color: #000;
     transition: color .2s ease-in-out;
     &:hover {
-    border-bottom: none;
+      color: #000;
+    /* border-bottom: none; */
     /* color: #34a3a3; */
-    color: #00838a;
+    /* color: #00838a; */
     }
    }
   `

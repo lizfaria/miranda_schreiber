@@ -1,7 +1,7 @@
 {
-  "name": "miranda-schreiber",
+  "name": "rachel-gerry",
   "private": true,
-  "description": "miranda schreiber portfolio",
+  "description": "rachel gerry portfolio",
   "version": "1.0.0",
   "author": "liz faria",
   "dependencies": {
@@ -50,9 +50,9 @@
     "react-switch": "^5.0.0",
     "react-typography": "^0.16.19",
     "styled-components": "^4.2.0",
-    "typeface-martel-sans": "^1.1.13",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.54",
+    "typeface-fira-sans-extra-condensed": "^1.1.13",
+    "typeface-libre-caslon-text": "^1.1.13",
+    "typeface-signika": "^1.1.13",
     "typography": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19"
   },

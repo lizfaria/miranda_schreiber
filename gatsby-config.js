@@ -1,13 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Miranda Schreiber`,
+    title: `Rachel Gerry`,
     author: `Liz Faria`,
-    description: `Miranda Schreiber`,
-    url: `https://mirandaschreiber.ca`,
-    twitterUsername: "@miranda_joli",
-    social: {
-      twitter: `miranda_joli`,
-    },
+    description: `Rachel Gerry`,
+    url: `https://rachelgerry.ca`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -58,8 +54,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Miranda Schreiber`,
-        short_name: `Miranda Schreiber`,
+        name: `Rachel Gerry`,
+        short_name: `Rachel Gerry`,
         start_url: `/`,
         background_color: `#f1e7e1`,
         theme_color: `rgb(211, 47, 47)`,

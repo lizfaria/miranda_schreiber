@@ -1,4 +1,4 @@
 // custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
-import "typeface-martel-sans"
+import "typeface-signika"
+import "typeface-libre-caslon-text"
+import "typeface-fira-sans-extra-condensed"

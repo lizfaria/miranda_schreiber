@@ -22,7 +22,7 @@ const SEO = ({ title, description, article }) => {
   } = site.siteMetadata
 
   const seo = {
-    title: title || defaultTitle,
+    title: `${title} — RG` || defaultTitle,
     description: description || defaultDescription,
     url: `${siteUrl}${pathname}`,
   }
@@ -37,10 +37,6 @@ const SEO = ({ title, description, article }) => {
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && (
         <meta property="og:description" content={seo.description} />
-      )}
-      <meta name="twitter:card" content="summary_large_image" />
-      {twitterUsername && (
-        <meta name="twitter:creator" content={twitterUsername} />
       )}
       {seo.title && <meta name="twitter:title" content={seo.title} />}
       {seo.description && (
@@ -59,7 +55,6 @@ const query = graphql`
         defaultTitle: title
         defaultDescription: description
         siteUrl: url
-        twitterUsername
       }
     }
   }
