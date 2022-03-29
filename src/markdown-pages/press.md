@@ -24,4 +24,8 @@ press:
     title: Doctors Call for Queer Curriculum in Medical Schools
     link: https://thetyee.ca/News/2021/07/28/Doctors-Call-Queer-Curriculum-Medical-Schools/
     year: "2021"
+  - publisher: Bi Women's Quarterly
+    title: "Interview With Miranda Schreiber: Improving Healthcare"
+    link: https://www.biwomenquarterly.com/interview-with-miranda-schreiber-improving-health-care-for-bisexual-and-other-2slgbtqia-individuals-through-better-training-of-medical-practitioners/
+    year: "2022"
 ---
