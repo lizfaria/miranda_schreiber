@@ -2,6 +2,10 @@
 path: /publications
 title: Publications
 publications:
+  - title: "Doctors on TikTok: The Dark Side of Medical Influencers"
+    year: "2022"
+    outlet: The Walrus
+    link: https://thewalrus.ca/medical-tiktok/
   - link: https://thewalrus.ca/my-day-in-zoom-court-virtual-trials-are-a-better-option-for-sexual-assault-survivors/
     title: My Day in Zoom Court
     year: "2021"
@@ -22,8 +26,4 @@ publications:
     year: "2020"
     link: https://www.thestar.com/opinion/contributors/2020/06/17/we-need-full-data-to-assess-impact-of-covid-19-on-lgbtq-people.html
     outlet: Toronto Star
-  - title: "Doctors on TikTok: The Dark Side of Medical Influencers"
-    year: "2022"
-    outlet: The Walrus
-    link: https://thewalrus.ca/medical-tiktok/
 ---
