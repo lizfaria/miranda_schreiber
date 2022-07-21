@@ -2,6 +2,10 @@
 path: /publications
 title: Publications
 publications:
+  - title: Women are worried that hybrid work won’t last
+    year: "2022"
+    outlet: The Globe and Mail
+    link: https://www.theglobeandmail.com/business/article-hybrid-work-women-career-family/
   - title: "Doctors on TikTok: The Dark Side of Medical Influencers"
     year: "2022"
     outlet: The Walrus
