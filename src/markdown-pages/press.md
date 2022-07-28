@@ -28,4 +28,8 @@ press:
     title: During COVID, Queer Folks Are Trying To Create Community & Joy
     link: https://www.bustle.com/p/during-covid-queer-folks-are-trying-to-create-community-joy-22879931
     year: "2020"
+  - link: https://temertymedicine.utoronto.ca/news/new-lgbtq-workshop-aims-address-health-disparities
+    publisher: University of Toronto
+    title: New LGBTQ Workshop Aims to Address Health Disparities
+    year: "2020"
 ---
