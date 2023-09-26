@@ -10,6 +10,8 @@ publications:
     year: "2022"
     outlet: The Walrus
     link: https://thewalrus.ca/medical-tiktok/
+    awards: Nominated for a Digital Publishing Award, a program of the National
+      Media Awards Foundation
   - link: https://thewalrus.ca/my-day-in-zoom-court-virtual-trials-are-a-better-option-for-sexual-assault-survivors/
     title: My Day in Zoom Court
     year: "2021"
