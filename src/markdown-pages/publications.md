@@ -28,4 +28,8 @@ publications:
     year: "2020"
     link: https://www.thestar.com/opinion/contributors/2020/06/17/we-need-full-data-to-assess-impact-of-covid-19-on-lgbtq-people.html
     outlet: Toronto Star
+  - title: "Canadian Oligarchy: How the Super-Rich Rule 'Socialized' Healthcare"
+    year: "2023"
+    outlet: Hampton Think
+    link: https://www.hamptonthink.org/read/canadian-oligarchy-how-the-super-rich-rule-socialized-healthcare
 ---
