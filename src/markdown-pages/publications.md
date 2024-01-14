@@ -32,4 +32,8 @@ publications:
     year: "2023"
     outlet: Hampton Think
     link: https://www.hamptonthink.org/read/canadian-oligarchy-how-the-super-rich-rule-socialized-healthcare
+  - title: "Canadian Oligarchy: How the Super-rich Rule 'Socialized' Healthcare"
+    year: "2023"
+    outlet: Hampton Think
+    link: https://www.hamptonthink.org/read/canadian-oligarchy-how-the-super-rich-rule-socialized-healthcare
 ---
