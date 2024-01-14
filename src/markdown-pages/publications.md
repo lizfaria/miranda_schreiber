@@ -36,4 +36,8 @@ publications:
     year: "2023"
     outlet: Hampton Think
     link: https://www.hamptonthink.org/read/canadian-oligarchy-how-the-super-rich-rule-socialized-healthcare
+  - link: https://thewalrus.ca/dying-with-dignity-lobby/
+    title: The Lobby Group That Owns the Conversation around Assisted Deaths
+    year: "2024"
+    outlet: The Walrus
 ---
