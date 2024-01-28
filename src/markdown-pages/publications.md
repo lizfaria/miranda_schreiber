@@ -2,6 +2,14 @@
 path: /publications
 title: Publications
 publications:
+  - link: https://thewalrus.ca/dying-with-dignity-lobby/
+    title: The Lobby Group That Owns the Conversation around Assisted Deaths
+    year: "2024"
+    outlet: The Walrus
+  - title: "Canadian Oligarchy: How the Super-rich Rule 'Socialized' Healthcare"
+    year: "2023"
+    outlet: Hampton Think
+    link: https://www.hamptonthink.org/read/canadian-oligarchy-how-the-super-rich-rule-socialized-healthcare
   - title: Women are worried that hybrid work won’t last
     year: "2022"
     outlet: The Globe and Mail
@@ -28,16 +36,8 @@ publications:
     year: "2020"
     link: https://www.thestar.com/opinion/contributors/2020/06/17/we-need-full-data-to-assess-impact-of-covid-19-on-lgbtq-people.html
     outlet: Toronto Star
-  - title: "Canadian Oligarchy: How the Super-Rich Rule 'Socialized' Healthcare"
-    year: "2023"
+  - link: https://www.hamptonthink.org/read/on-the-ideal-canada-and-its-consequences
+    title: On the Ideal Canada and Its Consequences
+    year: "2020"
     outlet: Hampton Think
-    link: https://www.hamptonthink.org/read/canadian-oligarchy-how-the-super-rich-rule-socialized-healthcare
-  - title: "Canadian Oligarchy: How the Super-rich Rule 'Socialized' Healthcare"
-    year: "2023"
-    outlet: Hampton Think
-    link: https://www.hamptonthink.org/read/canadian-oligarchy-how-the-super-rich-rule-socialized-healthcare
-  - link: https://thewalrus.ca/dying-with-dignity-lobby/
-    title: The Lobby Group That Owns the Conversation around Assisted Deaths
-    year: "2024"
-    outlet: The Walrus
 ---
