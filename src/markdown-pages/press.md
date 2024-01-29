@@ -2,6 +2,10 @@
 path: /press
 title: Press
 press:
+  - publisher: The National Post
+    link: https://nationalpost.com/opinion/lobby-group-behind-canadas-hyper-liberalized-euthanasia-regime
+    title: The lobby group behind Canada's hyper-liberalized euthanasia regime
+    year: "2024"
   - publisher: Bi Women's Quarterly
     title: "Interview With Miranda Schreiber: Improving Healthcare"
     link: https://www.biwomenquarterly.com/interview-with-miranda-schreiber-improving-health-care-for-bisexual-and-other-2slgbtqia-individuals-through-better-training-of-medical-practitioners/
