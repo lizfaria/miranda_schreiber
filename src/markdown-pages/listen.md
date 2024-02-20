@@ -2,6 +2,11 @@
 path: /listen
 title: Listen
 listenLink:
+  - publication: "2slgbtq health in focus "
+    outlet: Rainbow Health Onttarioo
+    title: "episode 1: 2slgbtq medical education"
+    link: https://www.rainbowhealthontario.ca/2slgbtq-health-in-focus-episode-1-2slgbtq-medical-education/
+    year: "2024"
   - publication: Pathpod Podcast
     outlet: Dr. Meredith Pittman, Cornell University
     title: Medicine and the LGBTQ2 Community with Miranda Schreibe‪r
@@ -25,9 +30,4 @@ listenLink:
                 src="https://www.youtube-nocookie.com/embed/AQ_vjEecxxA" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media;
                 gyroscope; picture-in-picture" allowfullscreen></iframe>
-  - publication: "2slgbtq health in focus "
-    outlet: Rainbow Health Onttarioo
-    title: "episode 1: 2slgbtq medical education"
-    link: https://www.rainbowhealthontario.ca/2slgbtq-health-in-focus-episode-1-2slgbtq-medical-education/
-    year: "2024"
 ---
