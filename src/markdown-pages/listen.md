@@ -3,7 +3,7 @@ path: /listen
 title: Listen
 listenLink:
   - publication: "2slgbtq health in focus "
-    outlet: Rainbow Health Onttarioo
+    outlet: Rainbow Health Ontario
     title: "episode 1: 2slgbtq medical education"
     link: https://www.rainbowhealthontario.ca/2slgbtq-health-in-focus-episode-1-2slgbtq-medical-education/
     year: "2024"
