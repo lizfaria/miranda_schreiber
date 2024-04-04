@@ -40,4 +40,9 @@ publications:
     year: "2020"
     link: https://www.thestar.com/opinion/contributors/2020/06/17/we-need-full-data-to-assess-impact-of-covid-19-on-lgbtq-people.html
     outlet: Toronto Star
+  - title: "‘Just a pinch’: Women frustrated as medical community downplays pain of
+      IUD insertion"
+    link: https://healthydebate.ca/2024/04/topic/medical-community-downplays-pain-iud/
+    year: "2024"
+    outlet: Healthy Debate
 ---
