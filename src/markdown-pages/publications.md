@@ -45,4 +45,9 @@ publications:
     link: https://healthydebate.ca/2024/04/topic/medical-community-downplays-pain-iud/
     year: "2024"
     outlet: Healthy Debate
+  - title: "‘Just a pinch’: Women frustrated as medical community downplays pain of
+      IUD insertion"
+    year: "2024"
+    outlet: Healthy Debate
+    link: https://healthydebate.ca/2024/04/topic/medical-community-downplays-pain-iud/
 ---
