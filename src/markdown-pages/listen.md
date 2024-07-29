@@ -13,18 +13,6 @@ listenLink:
         width="100%" height="152" frameBorder="0" allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen;
         picture-in-picture" loading="lazy"></iframe>
-  - publication: Pathpod Podcast
-    outlet: Dr. Meredith Pittman, Cornell University
-    title: Medicine and the LGBTQ2 Community with Miranda Schreibe‪r
-    link: https://podcasts.apple.com/us/podcast/pathpod-news-edition-medicine-lgbtq2-community-miranda/id1510581764?i=1000478700269
-    year: "2020"
-    embed:
-      code: >-
-        <iframe title="PathPod News Edition: Medicine and the LGBTQ2 Community
-                with Miranda Schreiber"
-                src="https://www.podbean.com/media/player/hutt5-e03a93&?from=usersite&skin=1&fonts=Helvetica&auto=0&download=1&share=1&version=1&btn-skin=102"
-                height="122" width="100%" style="border: none;" scrolling="no"
-                data-name="pb-iframe-player"></iframe>
   - publication: Webinar
     outlet: Ontario Federation of Labour
     title: "Pride goes on: Solidarity in the time of a pandemic"
