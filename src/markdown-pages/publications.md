@@ -49,4 +49,9 @@ publications:
     year: "2020"
     link: https://www.thestar.com/opinion/contributors/2020/06/17/we-need-full-data-to-assess-impact-of-covid-19-on-lgbtq-people.html
     outlet: Toronto Star
+  - title: "'It's being abused:' Group that led campaign for MAID is now calling for
+      safeguards"
+    year: "2024"
+    outlet: The National Post
+    link: https://nationalpost.com/news/group-that-led-campaign-for-maid-now-calling-for-safeguards
 ---
