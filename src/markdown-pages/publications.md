@@ -6,6 +6,11 @@ publications:
     year: "2025"
     outlet: Bookhug Press
     link: https://bookhugpress.ca/shop/books/forthcoming/forthcoming-2025/iris-and-the-dead-by-miranda-schreiber/
+  - title: "'It's being abused:' Group that led campaign for MAID is now calling for
+      safeguards"
+    year: "2024"
+    outlet: The National Post
+    link: https://nationalpost.com/news/group-that-led-campaign-for-maid-now-calling-for-safeguards
   - title: "‘Just a pinch’: Women frustrated as medical community downplays pain of
       IUD insertion"
     year: "2024"
@@ -49,9 +54,4 @@ publications:
     year: "2020"
     link: https://www.thestar.com/opinion/contributors/2020/06/17/we-need-full-data-to-assess-impact-of-covid-19-on-lgbtq-people.html
     outlet: Toronto Star
-  - title: "'It's being abused:' Group that led campaign for MAID is now calling for
-      safeguards"
-    year: "2024"
-    outlet: The National Post
-    link: https://nationalpost.com/news/group-that-led-campaign-for-maid-now-calling-for-safeguards
 ---
