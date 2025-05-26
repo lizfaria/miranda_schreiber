@@ -2,7 +2,7 @@
 path: /publications
 title: Publications
 publications:
-  - title: Iris and the Dead (forthcoming)
+  - title: Iris and the Dead
     year: "2025"
     outlet: Bookhug Press
     link: https://bookhugpress.ca/shop/books/forthcoming/forthcoming-2025/iris-and-the-dead-by-miranda-schreiber/
