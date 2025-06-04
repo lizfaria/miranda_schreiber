@@ -2,6 +2,10 @@
 path: /press
 title: Press
 press:
+  - publisher: Ms. Magazine
+    title: June 2025 Reads for the Rest of Us
+    link: https://msmagazine.com/2025/06/03/best-feminist-books-june-2025-reads-for-the-rest-of-us-women-lgbtq-writers/
+    year: "2025"
   - publisher: The National Post
     link: https://nationalpost.com/opinion/lobby-group-behind-canadas-hyper-liberalized-euthanasia-regime
     title: The lobby group behind Canada's hyper-liberalized euthanasia regime
