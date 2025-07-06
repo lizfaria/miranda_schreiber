@@ -2,6 +2,11 @@
 path: /listen
 title: Listen
 listenLink:
+  - publication: "Bookstorm "
+    link: https://soundcloud.com/user-825325291/miranda-schreiber?si=07d093541f2e4b7dbe0658ac5fd35103&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+    title: Miranda Schreiber
+    outlet: Shelf Life Books
+    year: "2025"
   - publication: "2slgbtq health in focus "
     outlet: Rainbow Health Ontario
     title: "episode 1: 2slgbtq medical education"
