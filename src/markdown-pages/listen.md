@@ -7,6 +7,11 @@ listenLink:
     title: Miranda Schreiber
     outlet: Shelf Life Books
     year: "2025"
+  - publication: The Radical Reverend
+    link: https://theradicalreverend.podbean.com/e/queer-writing-miranda-schreiber-and-mp-jenny-kwanfuture-of-the-ndp-radical-reverend-6102025/
+    title: Queer Writing, Miranda Schreiber and MP Jenny Kwan/Future of the NDP
+    outlet: ""
+    year: "2025"
   - publication: "2slgbtq health in focus "
     outlet: Rainbow Health Ontario
     title: "episode 1: 2slgbtq medical education"
