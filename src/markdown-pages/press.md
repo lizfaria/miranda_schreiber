@@ -2,6 +2,18 @@
 path: /press
 title: Press
 press:
+  - link: https://electricliterature.com/15-small-press-books-you-should-be-reading-this-summer-2/
+    publisher: Electric Literature
+    title: 15 Small Press Books You Should Be Reading This Summer
+    year: "2025"
+  - publisher: Literary Review of Canada - Bookworm 102
+    title: Piece of Mind - Roxane Hudon on Miranda Schreiber’s “Iris and the Dead”
+    link: https://reviewcanada.substack.com/i/164089429/piece-of-mind
+    year: "2025"
+  - link: https://largeheartedboy.com/2025/06/11/miranda-schreibers-music-playlist-for-her-novel-iris-and-the-dead/
+    publisher: Largehearted Boy
+    title: Miranda Schreiber’s music playlist for her novel Iris and the Dead
+    year: "2025"
   - publisher: Ms. Magazine
     title: June 2025 Reads for the Rest of Us
     link: https://msmagazine.com/2025/06/03/best-feminist-books-june-2025-reads-for-the-rest-of-us-women-lgbtq-writers/
