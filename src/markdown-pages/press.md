@@ -2,6 +2,10 @@
 path: /press
 title: Press
 press:
+  - publisher: Maisonneuve
+    title: "Iris and the Dead: An interview with Miranda Schreiber"
+    link: https://maisonneuve.org/post/2025/07/7/iris-and-dead-interview-miranda-schreiber/
+    year: "2025"
   - link: https://electricliterature.com/15-small-press-books-you-should-be-reading-this-summer-2/
     publisher: Electric Literature
     title: 15 Small Press Books You Should Be Reading This Summer
