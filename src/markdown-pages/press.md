@@ -10,7 +10,7 @@ press:
     publisher: Electric Literature
     title: 15 Small Press Books You Should Be Reading This Summer
     year: "2025"
-  - publisher: Literary Review of Canada - Bookworm 102
+  - publisher: "Literary Review of Canada "
     title: Piece of Mind - Roxane Hudon on Miranda Schreiber’s “Iris and the Dead”
     link: https://reviewcanada.substack.com/i/164089429/piece-of-mind
     year: "2025"
