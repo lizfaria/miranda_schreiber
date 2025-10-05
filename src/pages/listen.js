@@ -27,9 +27,11 @@ const Listen = ({ data }) => {
             <div key={index}>
               <h3>{title}</h3>
               <p>{publication} — {outlet}</p>
-              <Video>
-                <div className="Container" dangerouslySetInnerHTML={{__html: embed.code}}></div>
-              </Video>
+              {embed?.code && (
+                  <Video>
+                    <div className="Container" dangerouslySetInnerHTML={{__html: embed.code}}></div>
+                  </Video>
+              )}
             </div>
           )
         })}
