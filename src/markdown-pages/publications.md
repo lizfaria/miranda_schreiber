@@ -7,7 +7,7 @@ publications:
     year: "2025"
     outlet: Toronto Star
     link: https://www.thestar.com/opinion/contributors/distance-learning-is-over-so-why-are-toronto-public-schools-still-subjecting-kids-brains-to/article_0e3ecdaa-9780-4b79-8807-da54f95dca8a.html
-  - title: Iris and the Dead
+  - title: Iris and the Dead, a novel
     year: "2025"
     outlet: Bookhug Press
     link: https://bookhugpress.ca/shop/books/forthcoming/forthcoming-2025/iris-and-the-dead-by-miranda-schreiber/
