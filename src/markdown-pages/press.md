@@ -52,4 +52,8 @@ press:
     publisher: University of Toronto
     title: New LGBTQ Workshop Aims to Address Health Disparities
     year: "2020"
+  - publisher: Toronto International Festival of Authors
+    title: "Women Asking Women: Joana Mosi & Miranda Schreiber"
+    link: https://alllitup.ca/women-asking-women-joana-mosi-miranda-schreiber/
+    year: "2025"
 ---
