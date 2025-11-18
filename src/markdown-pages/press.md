@@ -2,6 +2,10 @@
 path: /press
 title: Press
 press:
+  - publisher: Toronto International Festival of Authors
+    title: "Women Asking Women: Joana Mosi & Miranda Schreiber"
+    link: https://alllitup.ca/women-asking-women-joana-mosi-miranda-schreiber/
+    year: "2025"
   - publisher: Maisonneuve
     title: "Iris and the Dead: An interview with Miranda Schreiber"
     link: https://maisonneuve.org/post/2025/07/7/iris-and-dead-interview-miranda-schreiber/
@@ -52,8 +56,4 @@ press:
     publisher: University of Toronto
     title: New LGBTQ Workshop Aims to Address Health Disparities
     year: "2020"
-  - publisher: Toronto International Festival of Authors
-    title: "Women Asking Women: Joana Mosi & Miranda Schreiber"
-    link: https://alllitup.ca/women-asking-women-joana-mosi-miranda-schreiber/
-    year: "2025"
 ---
