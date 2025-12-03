@@ -2,6 +2,11 @@
 path: /publications
 title: Publications
 publications:
+  - link: https://healthydebate.ca/2025/11/topic/patient-advocates-dangers-botox/
+    title: "‘Things went horribly wrong’: Patient advocates spreading the word about
+      dangers of Botox"
+    year: "2025"
+    outlet: Healthy Debate
   - title: Distance learning is over, so why are Toronto public schools still
       subjecting kids' brains to screens?
     year: "2025"
