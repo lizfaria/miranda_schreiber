@@ -2,6 +2,10 @@
 path: /press
 title: Press
 press:
+  - publisher: Ms. Magazine
+    link: https://msmagazine.com/2025/12/19/best-feminist-books-2025/
+    title: "2025 ‘Best of the Rest’: Our Favorite Books of the Year"
+    year: "2025"
   - publisher: Toronto International Festival of Authors
     title: "Women Asking Women: Joana Mosi & Miranda Schreiber"
     link: https://alllitup.ca/women-asking-women-joana-mosi-miranda-schreiber/
@@ -56,8 +60,4 @@ press:
     publisher: University of Toronto
     title: New LGBTQ Workshop Aims to Address Health Disparities
     year: "2020"
-  - publisher: Ms. Magazine
-    link: https://msmagazine.com/2025/12/19/best-feminist-books-2025/
-    title: "2025 ‘Best of the Rest’: Our Favorite Books of the Year"
-    year: "2025"
 ---
